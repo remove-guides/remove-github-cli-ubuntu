@@ -8,10 +8,12 @@ HOME = f'/home/{USER}'
 RED = "\033[31m"
 
 
-def remove_from_apt():
+def remove_from_packages():
     try:
         os.system('apt-get purge gh -y')
         os.system('apt autoremove -y')
+
+        os.system('brew uninstall gh')
     except:
         print(f"\n{RED} Failed on remove packages! \n")
 
@@ -26,7 +28,7 @@ def remove_files():
 
 
 def main():
-    remove_from_apt()
+    remove_from_packages()
     remove_files()
 
 
