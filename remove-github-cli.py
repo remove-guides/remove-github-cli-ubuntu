@@ -19,6 +19,7 @@ def remove_from_apt():
 def remove_files():
     try:
         os.system('rm -rf /etc/apt/sources.list.d/github-cli.list')
+        os.system(f'rm -rf {HOME}/.config/gh')
 
     except:
         print(f"\n{RED} Failed on remove files! \n")
