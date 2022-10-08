@@ -2,7 +2,7 @@
 
 # Remove [Github-CLI](https://cli.github.com/) from [Ubuntu](https://ubuntu.com/) based distros
 
-## Remove all dependencies and remaining files from docker
+## Remove all dependencies and remaining files from gh
 
 <br />
 <br />
